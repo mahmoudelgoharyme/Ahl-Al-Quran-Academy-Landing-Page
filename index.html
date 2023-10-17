@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<title>اهل القرأن - لحفظ وضبط القرأن الكريم</title>
+<!-- Meta Tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="">
+<meta name="description" content="">
+<!-- Favicon Icon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/svg">
+<!-- CSS Files -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+<!-- Header Menu -->
+<header class="row">
+<div id="header">
+<div class="logo"><a href="/"><img src="img/logo.png"></a></div>
+<div class="menu" id="menu">
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+    <i class="fas fa-bars"></i>
+    </label>
+<ul>
+    <li><a href="#" title="من نحن">من نحن</a></li>
+    <li><a href="#" title="الخدمات">الخدمات</a></li>
+    <li><a href="#" title="المسابقات">المسابقات</a></li>
+    <li><a href="#" title="الفعاليات">الفعاليات</a></li>
+    <li><a href="#" title="اتصل بنا">اتصل بنا</a></li>
+</ul>
+</div>
+<div class="button">
+<a href="#">إضافة جهة تحفيظ</a>
+</div>
+</div>
+</header>
+
+<!-- Header Hero -->
+<section id="hero"  class="row">
+<div class="hero-img">
+    <img src="img/hero.png" title="اهل القرأن" alt="">
+</div>
+<div class="hero-details">
+    <h3>هل انت مستعد للتعلم؟</h3>
+    <p>القرآن هو النص الديني المركزي للإسلام. القرآن هو كتاب الهداية والتوجيه الإلهي للبشرية. اكاديمية اهل القرأن لحفظ وضبط القرآن الكريم، طريقك نحو السعادة التي لا تنته.</p>
+    <div class="buttons">
+    <a href="#" title="قراءة القرأن">قراءة القرأن</a>
+    <a href="#praying" title="مواقيت الصلاة" class="green">مواقيت الصلاة</a>
+</div>
+</div>
+</section>
+
+<!-- Pillars of Islam -->
+<section id="pillars">
+<div class="row">
+<div class="widget-title">
+<span>أركان الإسلام</span>
+<h3>أركان الإسلام الخمسة</h3>
+<p></p>
+</div>
+
+<div class="pillars">
+<div class="pillar">
+<img src="img/pillar1.png" alt="">
+<h5>الشهادتين</h5>
+<span>عقيدة</span>
+</div>
+<div class="pillar">
+<img src="img/pillar2.png" alt="">
+<h5>إقام الصلاة</h5>
+<span>صلاة</span>
+</div>
+<div class="pillar">
+<img src="img/pillar3.png" alt="">
+<h5>إيتاء الزكاة</h5>
+<span>صدقة</span>
+</div>
+<div class="pillar">
+<img src="img/pillar4.png" alt="">
+<h5>صوم شهر رمضان</h5>
+<span>صوم</span>
+</div>
+<div class="pillar">
+<img src="img/pillar5.png" alt="">
+<h5>حج البيت</h5>
+<span>أدي فريضة الحج</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Praying Time -->
+<section id="praying">
+    <div class="row">
+        <div class="widget-title">
+            <span>مواقيت الصلاة</span>
+            <h3>مواقيت الصلاة للمسلمين</h3>
+        </div>
+
+        <div class="greenbox">
+            <span class="todayis"><i class="far fa-calendar-alt"></i> الإثنين</span>
+            <div id="todaymilady">
+                <script>
+                date = new Date();
+                day = date.getDate();
+                month = new Array("يناير", "فبراير", "مارس", "ابريل", "مايو", "يونيو", "يوليو", "اغسطس", "سبتمبر", "اكتوبر", "نوفمبر", "ديسمبر");
+                year = date.getFullYear();
+                document.getElementById("todaymilady").innerHTML = day + " " + month[date.getDay()] + " " + year + " مـ";
+                </script>
+            </div>
+            <div class="todayhejri"></div>
+            <div class="timenow">
+                <h2>مواقيت الصلاة في <b>القاهرة - مصر</b></h2>
+                <script>function display_ct6() {
+                    var x = new Date()
+                    var ampm = x.getHours( ) >= 12 ? ' م' : ' ص';
+                    hours = x.getHours( ) % 12;
+                    hours = hours ? hours : 12;
+                    x1 = "الساعة الآن " +  hours + ":" +  x.getMinutes() + ":" +  x.getSeconds() + " " + ampm;
+                    document.getElementById('timenow').innerHTML = x1;
+                    display_c6();
+                     }
+                     function display_c6(){
+                    var refresh=1000; // Refresh rate in milli seconds
+                    mytime=setTimeout('display_ct6()',refresh)
+                    }
+                    display_c6()
+                    </script>
+                    <span id='timenow'></span>
+            </div>
+            <div class="prayingtime">
+                <div class="timewidget">
+                    <h4>الفجر</h4>
+                    <span>3:13 ص</span>
+                </div>
+                <div class="timewidget">
+                    <h4>الشروق</h4>
+                    <span>4:57 ص</span>
+                </div>
+                <div class="timewidget">
+                    <h4>الظهر</h4>
+                    <span>11:59 ص</span>
+                </div>
+                <div class="timewidget">
+                    <h4>العصر</h4>
+                    <span>3:35 م</span>
+                </div>
+                <div class="timewidget">
+                    <h4>المغرب</h4>
+                    <span>7:01 م</span>
+                </div>
+                <div class="timewidget">
+                    <h4>العشاء</h4>
+                    <span>8:33 م</span>
+                </div>
+            </div>
+
+            </div>
+
+    </div>
+</section>
+
+<!-- Time & Table -->
+<section id="table">
+<div class="row">
+    <div class="widget-title">
+        <span>الجدول الزمني</span>
+        <h3>جدول الحصص الأسبوعية</h3>
+</div>
+<div class="tab">
+    <button class="tablinks active" onmouseover="openCity(event, 'tahfez')">مواعيد التحفيظ</button>
+    <button class="tablinks" onmouseover="openCity(event, 'mospqat')">المسابقات</button>
+    <button class="tablinks" onmouseover="openCity(event, 'faalyat')">الفعاليات</button>
+  </div>
+
+<!-- First Table -->
+
+<div id="tahfez" class="tabcontent">
+<table cellpadding="0" cellspacing="0">
+    <tbody>
+        <tr>
+            <th></th>
+            <th>السبت</th>
+            <th>الأحد</th>
+            <th>الإثنين</th>
+            <th>الثلاثاء</th>
+            <th>الأربعاء</th>
+            <th>الخميس</th>
+        </tr>
+        <tr>
+            <th>10:00 ص</th>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>12:00 م</th>
+            <td></td>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>2:00 م</th>
+            <td></td>
+            <td></td>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>4:00 م</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>6:00 م</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>8:00 م</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><h4>سورة البقرة</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!-- Second Table -->
+<div id="mospqat" class="tabcontent">
+    <table cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <th></th>
+                <th>السبت</th>
+                <th>الأحد</th>
+                <th>الإثنين</th>
+                <th>الثلاثاء</th>
+                <th>الأربعاء</th>
+                <th>الخميس</th>
+            </tr>
+            <tr>
+                <th>10:00 ص</th>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>12:00 م</th>
+                <td></td>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2:00 م</th>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>4:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>6:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>8:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تاني</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+<!-- Third Table -->
+<div id="faalyat" class="tabcontent">
+    <table cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <th></th>
+                <th>السبت</th>
+                <th>الأحد</th>
+                <th>الإثنين</th>
+                <th>الثلاثاء</th>
+                <th>الأربعاء</th>
+                <th>الخميس</th>
+            </tr>
+            <tr>
+                <th>10:00 ص</th>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>12:00 م</th>
+                <td></td>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2:00 م</th>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>4:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>6:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>8:00 م</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4>جدول تالت</h4><span>10:00ص - 11:00ص</span><span>تحفيظ</span></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</div>
+</section>
+
+<!-- Help Us -->
+<section id="helpus">
+    <div class="row">
+        <h3>التبرع لأكاديمية اهل القرآن</h3>
+        <p>ساهم في تطوير المؤسسة<br>اتبرع بأي مبلغ وغيّر حياة ناس كتير</p>
+        <div class="button">
+            <a href="">تبرع الأن</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="column">
+            <div class="logo">
+                <img src="img/logo.png" alt="" title="">
+            </div>
+            <p class="first">اكاديمية اهل القرأن لتعليم القرآن الكريم وعلومه
+            تعليم القرآن بمفهومه الواسع  بأفضل الوسائل التربوية</p>
+            <p><i class="fas fa-mobile-alt"></i> 0123456789</p>
+            <p><i class="fas fa-map-marker-alt"></i> الإسكندرية، مصر</p>
+            <p><i class="fas fa-envelope"></i> mail@mail.com</p>
+        </div>
+        <div class="column">
+            <h5>الأكاديمية</h5>
+            <ul>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">تسجيل طالب</a></li>
+                <li><a href="#">انضم الي هيئة التدريس</a></li>
+                <li><a href="#">الخطة الدراسية</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h5>الموقع</h5>
+            <ul>
+                <li><a href="#">القرأن الكريم اونلاين</a></li>
+                <li><a href="#praying">مواقيت الصلاة</a></li>
+                <li><a href="#pillars">أركان الإسلام</a></li>
+                <li><a href="#table">جدول الحصص</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="bottomtext">
+            <p>كافة الحقوق محفوظة لـ <a href="اهل القرأن">اكاديمية اهل القرأن</a> © 2022</p>
+    </div>
+</footer>
+
+
+<!-- Time & Table Script -->
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+</body>
+</html>
